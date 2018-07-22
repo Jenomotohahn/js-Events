@@ -76,10 +76,32 @@ function redFace(){
 /*Create a function `showPrice` that will add the price of `$5.55` inside the paragraph with the id `price` after hovering your mouse over the paragraph.*/
 
 
+function showPrice(){
+    var cookiePrice = document.getElementById('price');
+    cookiePrice.innerHTML = '$5.55';
+
+}
+
+
+
+
+
+
 //7. Mr. Buttons
 /*Add an Event Listener to the button that will display `myQuote` inside the paragraph with the id of `displayQuote` after the button is clicked.*/
 
 var myQuote = "Our lives are defined by opportunities; even the ones we miss.";
+
+
+var buttonBenjamin = document.getElementById('Benjamin');
+buttonBenjamin.addEventListener('click',quoteDisplay);
+
+function quoteDisplay(){
+    var display = document.getElementById('displayQuote');
+    display.innerHTML = myQuote;
+
+}
+
 
 
 //8. Say It again, Randomly
