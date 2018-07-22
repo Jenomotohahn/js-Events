@@ -111,6 +111,18 @@ var quotes = ["It's a funny thing about comin' home. Looks the same, smells the 
 
 
 
+var randomButton = document.getElementById('random');
+randomButton.addEventListener('click', randomQuote);
+
+function randomQuote(){
+    var quoteDisplay = document.getElementById('displayQuotes');
+    quoteDisplay.innerHTML = quotes[Math.floor(Math.random()* quotes.length)];
+}
+
+
+
+
+
 //9. Unlock the Secret to Financial Freedom
 /*Create an event listener that will show and hide the message when clicking on the button.
 */
