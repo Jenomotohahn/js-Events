@@ -126,3 +126,20 @@ function randomQuote(){
 //9. Unlock the Secret to Financial Freedom
 /*Create an event listener that will show and hide the message when clicking on the button.
 */
+
+var eventShowHide = document.getElementById('showHide');
+
+eventShowHide.addEventListener('click',secretMessage());
+
+function secretMessage(){
+    var imgID = document.getElementById('catmoney');
+
+    if (imgID.style.display === 'none'){
+        imgID.style.display = 'block';
+
+    } else {
+        imgID.style.display = 'none';
+    }
+}
+
+
