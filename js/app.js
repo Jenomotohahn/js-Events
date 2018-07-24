@@ -57,9 +57,6 @@ function valueMenu(){
 
 
 
-
-
-
 //5. Gin.
 /*Create a function named redFace that will change the paragraph text to red and a font size of 30px after clicking on the text.*/
 
@@ -129,10 +126,10 @@ function randomQuote(){
 
 var eventShowHide = document.getElementById('showHide');
 
-eventShowHide.addEventListener('click',secretMessage());
+eventShowHide.addEventListener('click',secretMessage);
 
 function secretMessage(){
-    var imgID = document.getElementById('catmoney');
+    var imgID = document.getElementById('showmoney');
 
     if (imgID.style.display === 'none'){
         imgID.style.display = 'block';
